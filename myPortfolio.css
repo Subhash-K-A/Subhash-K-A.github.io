@@ -1,0 +1,972 @@
+:root{
+    font-size: 16px;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #07112f;
+    color: whitesmoke;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 2vw;
+
+}
+.header{
+    font-size: 2rem;
+    text-align: center;
+}
+.section-head{
+    font-size: 1.8rem;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+}
+.nav a{ 
+    display: block;
+    margin: 0.3vw;
+    width: 5vw;
+    height: 2vw;
+    border-radius: 0.5vw;
+    background-color: darkgray;
+    text-decoration: none;
+    color: black; 
+}
+.nav a div{
+    position: relative;
+    top: 0.5vw;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.nav a:link{
+    color: black;
+}
+
+.nav a:visited{
+    color: black;
+}
+
+.nav a:hover{
+    background-color: crimson;
+}
+
+.about{
+    padding: 0;
+    margin: 0;
+}
+.about-content{
+    display: flex;
+    flex-direction: row;
+    width: 94vw;
+    margin: 0;
+}
+.description{
+    width: inherit;
+    margin-right: 2vw;
+}
+.description p{
+    text-align: justify;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 1.5rem;
+    text-indent: 3rem;
+    line-height: 3vw;
+}
+.my-image{
+    width: 15vw;
+    height: 15vw;
+    margin: 0;
+}
+.image{
+    width: inherit;
+    height: inherit;
+    border-radius: 7vw;
+    opacity: 0.8;
+}
+
+.whatido{
+    margin: 10vw,0;
+    padding: 0;
+}
+.whatido-content{
+    margin: 0;
+    padding: 0;
+    width: 94vw;
+}
+.whatido-content p{
+    margin: 0;
+    padding: 0;
+    width: inherit;
+    text-indent: 3rem;
+    font-size: 1.5rem;
+    font-family: "Comic Sans MS", cursive, sans-serif; 
+    line-height: 3vw;
+}
+.skill-set{
+    display: flex;
+    flex-direction: row;
+    width: inherit;
+    justify-content: space-around;
+    align-content: space-around;
+    margin: 5vw 0;
+    padding: 0;
+    height: 15vw;
+}
+.background{
+    width: 16vw;
+    height: inherit;    
+    padding: 0;
+}
+.background img{
+    position: relative;
+    width: inherit;
+    height: inherit;
+    opacity: 0.3;
+    margin: 0;
+    padding: 0;
+}
+.skill{
+    position: relative;
+    width: inherit;
+    height: auto;
+    margin: -15vw 0 0 0;
+    padding: 0;
+    top: 6vw;     
+}
+.skill p{
+    width: inherit;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: firebrick;
+    text-indent: 0;
+}
+.future-skills .background{
+    width: 15vw;
+}
+.future-skills .background img{
+    opacity: 0.1;
+}
+.projects-content p{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 1.5rem;
+    text-indent: 3rem;
+}
+.projects-content p a{
+    text-decoration: none;
+}
+
+.contactme{
+    margin: 5vw 0;
+}
+.contact-form label{
+    display: inline-block;
+    width: 7vw;
+    vertical-align: top;    
+}
+.contact-form input{
+    width: 17vw;
+}
+.contact-form #description{
+    width: 17vw;
+    height: 5vw;
+}
+.contact-form button{
+    width: 5vw;
+    height: 2vw;
+    font-size: 1rem;
+    background-color: silver;
+    border-radius: 1vw;
+}
+
+.footer{
+    text-align: center;
+}
+.icon-group{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+.icon-group a{
+    display: block;
+    margin-left: 1vw;
+    background-color: #07112f;
+    border-radius: 0.4vw;
+}
+.icon-group img{
+    width: 3vw;
+    height: 3vw;
+    margin: 0;    
+    border-radius: 0.4vw;
+}
+.copyright{
+    color: darkgray;
+    font-size: 1.5rem;
+}
+
+
+@media only screen and (max-width : 360px ){
+    .header{
+        font-size: 0.8rem;
+    }
+    .section-head{
+        font-size: 0.8rem;
+    }
+    .nav{
+        display: none;
+    }
+    .about-content{
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-left: 0.5vw;
+        margin-right: 0.5vw;
+    }
+    .description{
+        margin: 0;   
+        padding: 0;
+    }
+    .description p{
+        line-height: 8vw;
+        text-indent: 2rem;
+        font-size: 0.8rem;
+    }
+    .my-image{
+        width: 94vw;
+        height: auto;
+        text-align: center;
+    }
+    .image{
+        width: 50vw;
+        height: 50vw;
+        border-radius: 25vw;
+    }
+
+    .whatido-content{
+        width: 90vw;
+        margin-left: 0.5vw;
+        margin-right: 0.5vw;
+    }
+    .whatido-content p{
+        font-size: 0.8rem;
+        line-height: 7vw;
+        margin: 5vw 0;
+    }
+    .current-skills{
+        height: 27vw;
+    }
+    .background{
+        width: 27vw;    
+    }
+    .skill{
+        margin-top: -27vw;
+        top: 3vw;      
+    }
+    .skill p{
+        font-weight: 200;
+        font-size: 0.7rem;
+    }
+    .future-skills{
+
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-direction: column;
+        height: 100vw;
+    }
+    .future-skills .background{
+        width: 40vw;
+        height: 30vw;
+    }
+    .future-skills .background .skill{
+        margin-top: -35vw;
+        top: 11vw;       
+    }
+    .future-skills .background .skill p{
+        font-size: 0.8rem;
+    }
+    .projects-content p{
+        font-size: 0.8rem;
+    }
+
+    .contact-form label{
+        width: 30vw;    
+    }
+    .contact-form input{
+        width: 55vw;
+        height: 10vw;
+    }
+    .contact-form #description{
+        width: 55vw;
+        height: 25vw;
+    }
+    .contact-form button{
+        width: 25vw;
+        height: 10vw;
+        font-size: 1rem;
+        border-radius: 3vw;
+    }
+
+    .icon-group a{
+        margin-left: 2vw;
+        border-radius: 0.4vw;
+    }
+    .icon-group img{
+        width: 10vw;
+        height: 10vw;
+        margin: 0;    
+        border-radius: 0.5vw;
+    }
+    .copyright{
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (min-width : 361px ) and (max-width : 460px){
+    .header{
+        font-size: 0.8rem;
+    }
+    .section-head{
+        font-size: 0.9rem;
+    }
+    .nav{
+        justify-content: center;
+        align-content: space-around;
+        align-items: center;
+    }
+    .nav a{
+        width: auto;
+        height: auto;
+        padding: 0.7vw;
+        margin: 0.7vw;
+        border-radius: 1vw
+    }  
+    .nav a div{
+        top: 0.25vw;
+        font-size: 1rem;
+    }
+    .about-content{
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-left: 0.3vw;
+        margin-right: 0.3vw;
+    }
+    .description{
+        margin: 0;
+        padding: 0;
+    }
+    .description p{
+        line-height: 7vw;
+        font-size: 1rem;
+        text-indent: 2rem; 
+    }
+    .my-image{
+        width: 94vw;
+        height: auto;
+        text-align: center;
+    }
+    .image{
+        width: 50vw;
+        height: 50vw;
+        border-radius: 25vw;
+    }
+
+
+    .whatido-content{
+        width: 90vw;
+        margin-left: 0.5vw;
+        margin-right: 0.5vw;
+    }
+    .whatido-content p{
+        font-size: 1rem;
+        line-height: 7vw;
+        margin: 5vw 0;
+    }
+    .current-skills{
+        height: 25vw;
+    }
+    .background{
+        width: 25vw;    
+    }
+    .skill{
+        margin-top: -25vw;
+        top: 3vw;      
+    }
+    .skill p{
+        font-weight: 200;
+        font-size: 0.8rem;
+    }
+    .future-skills{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-direction: column;
+        height: 85vw;
+    }
+    .future-skills .background{
+        width: 25vw;
+        height: 25vw;
+    }
+    .future-skills .background .skill{
+        margin-top: -25vw;
+        top: 3vw;       
+    }
+    .future-skills .background .skill p{
+        font-size: 0.8rem;
+    }
+    .projects-content p{
+        font-size: 0.9rem;
+    }
+
+    .contact-form label{
+        width: 30vw;    
+    }
+    .contact-form input{
+        width: 50vw;
+        height: 6vw;
+    }
+    .contact-form #description{
+        width: 50vw;
+        height: 20vw;
+    }
+    .contact-form button{
+        width: 20vw;
+        height: 8vw;
+        font-size: 1rem;
+        border-radius: 2vw;
+    }
+
+    .icon-group a{
+        margin-left: 2.2vw;
+        border-radius: 0.4vw;
+    }
+    .icon-group img{
+        width: 9vw;
+        height: 9vw;
+        margin: 0;    
+        border-radius: 0.5vw;
+    }
+    .copyright{
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (min-width : 461px ) and (max-width : 560px){
+    .header{
+        font-size: 1rem;
+    }
+    .section-head{
+        font-size: 1rem;
+    }
+    .nav{
+        justify-content: center;
+        align-content: space-around;
+        align-items: center;
+    }
+    .nav a{
+        width: auto;
+        height: auto;
+        padding: 1vw;
+        margin: 1vw;
+    }
+    .nav a div{
+        font-size: 1rem;
+        top: 0.25vw;
+    }
+    .about-content{
+        margin: 0;
+        padding: 0;
+        margin-left: 0.1vw;
+        margin-right: 0.1vw;
+    }
+    .description{
+        width: 59vw;
+        margin-right: 1.5vw;
+    }
+    .description p{
+        line-height: 5vw;
+        font-size: 1rem;
+        text-indent: 2rem;
+    }
+    .my-image{ 
+        width: 30vw;
+        height: 30vw;
+        padding-bottom: 15vw;
+        padding-top: 15vw;
+        margin-left: 2vw;
+    }
+    .image{
+        border-radius: 15vw;
+    }
+
+    .whatido-content{
+        width: 90vw;
+        margin-left: 0.5vw;
+        margin-right: 0.5vw;
+    }
+    .whatido-content p{
+        font-size: 1rem;
+        line-height: 7vw;
+        margin: 5vw 0;
+    }
+    .current-skills{
+        height: 25vw;
+    }
+    .background{
+        width: 25vw;    
+    }
+    .skill{
+        margin-top: -25vw;
+        top: 3vw;      
+    }
+    .skill p{
+        font-weight: 200;
+        font-size: 1rem;
+    }
+    .future-skills{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-direction: column;
+        height: 70vw;
+    }
+    .future-skills .background{
+        width: 28vw;
+        height: 28vw;
+    }
+    .future-skills .background .skill{
+        margin-top: -28vw;
+        top: 3.8vw;       
+    }
+    .future-skills .background .skill p{
+        font-size: 1rem;
+    }
+    .projects-content p{
+        font-size: 1rem;
+    }
+
+    .contact-form label{
+        width: 25vw;    
+    }
+    .contact-form input{
+        width: 47vw;
+        height: 6vw;
+    }
+    .contact-form #description{
+        width: 47vw;
+        height: 20vw;
+    }
+    .contact-form button{
+        width: 15vw;
+        height: 6vw;
+        font-size: 1.1rem;
+        border-radius: 2vw;
+    }
+
+    .icon-group a{
+        margin-left: 2.2vw;
+        border-radius: 0.4vw;
+    }
+    .icon-group img{
+        width: 7vw;
+        height: 7vw;
+        margin: 0;    
+        border-radius: 0.5vw;
+    }
+    .copyright{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width : 561px ) and (max-width : 750px){
+    .header{
+        font-size: 1rem;
+    }
+    .section-head{
+        font-size: 1.1rem;
+    }
+    .nav a{
+        width: auto;
+        height: auto;
+        padding: 0.7vw;
+        margin: 0.5vw;
+    }
+    .nav a div{
+        font-size: 1.1rem;
+        top: 0.25vw;
+    }
+    .about-content{
+        margin: 0;
+        padding: 0;
+        margin-left: 0.1vw;
+        margin-right: 0.1vw;
+    }
+    .description{
+        width: 59vw;
+        margin-right: 1.5vw;
+    }
+    .description p{
+        line-height: 5vw;
+        font-size: 1rem;
+        text-indent: 2rem;
+    }
+    .my-image{
+        width: 30vw;
+        height: 30vw;
+        padding-top: 7vw;
+        padding-bottom: 7vw;
+        margin-left: 2vw;
+    }
+    .image{
+        border-radius: 20vw;      
+    }
+
+
+    .whatido-content{
+        width: 90vw;
+        margin-left: 0.5vw;
+        margin-right: 0.5vw;
+    }
+    .whatido-content p{
+        font-size: 1rem;
+        line-height: 7vw;
+        margin: 5vw 0;
+    }
+    .current-skills{
+        height: 20vw;
+    }
+    .background{
+        width: 20vw;    
+    }
+    .skill{
+        margin-top: -20vw;
+        top: 1.5vw;      
+    }
+    .skill p{
+        font-weight: 200;
+        font-size: 1rem;
+    }
+    .future-skills{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-direction: column;
+        height: 50vw;
+    }
+    .future-skills .background{
+        width: 20vw;
+        height: 20vw;
+    }
+    .future-skills .background .skill{
+        margin-top: -20vw;
+        top: 1.5vw;       
+    }
+    .future-skills .background .skill p{
+        font-size: 1rem;
+    }
+    .projects-content p{
+        font-size: 1rem;
+    }
+
+    .contact-form label{
+        width: 20vw;    
+    }
+    .contact-form input{
+        width: 40vw;
+        height: 4vw;
+    }
+    .contact-form #description{
+        width: 40vw;
+        height: 15vw;
+    }
+    .contact-form button{
+        width: 12vw;
+        height: 5vw;
+        font-size: 1rem;
+        border-radius: 1.5vw;
+    }
+
+    .icon-group a{
+        margin-left: 2.2vw;
+        border-radius: 0.4vw;
+    }
+    .icon-group img{
+        width: 5vw;
+        height: 5vw;
+        margin: 0;    
+        border-radius: 0.5vw;
+    }
+    .copyright{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width : 751px ) and (max-width : 1024px){
+    .section-head{
+        font-size: 1.3rem;
+    }    
+    .nav a{
+        width: auto;
+        height: auto;
+        padding: 0.7vw;
+        margin: 0.5vw;
+    }
+    .nav a div{
+        font-size: 1.1rem;
+        top: 0.2vw;
+    }
+    .about-content{
+        margin: 0;
+        padding: 0;
+        margin-left: 0.1vw;
+        margin-right: 0.1vw;
+    }
+    .description{
+        width: 50vw;
+        margin-right: 2.5vw;
+    }
+    .description p{
+        line-height: 3.5vw;
+        width: 50vw;
+        font-size: 1.2rem;
+        text-indent: 2rem;
+    }
+    .my-image{
+        width: 25vw;
+        height: 25vw;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        margin-left: 2vw;
+    }
+    .image{
+        border-radius: 12.5vw;
+    }
+
+
+    .whatido-content p{
+        font-size: 1.3rem;
+        line-height: 7vw;
+    }
+    .skill-set{
+        height: 15vw;
+    }
+
+    .background{
+        width: 15vw;
+    }
+    .skill{
+        margin: -15vw 0 0 0;
+        padding: 0;
+        top: 4vw;      
+    }
+    .skill p{
+        font-weight: 100;
+        font-size: 1rem;
+    }
+    .future-skills{
+        height: 12vw;
+    }
+    .future-skills .background{
+        width: 12vw;
+    }
+    .future-skills .background .skill{
+        margin-top: -12vw;
+        top: 2.5vw;       
+    }
+    .future-skills .background .skill p{
+        font-size: 0.8rem;
+    }
+    .projects-content p{
+        font-size: 1.2rem;
+    }
+
+    .contact-form label{
+        width: 20vw;    
+    }
+    .contact-form input{
+        width: 33vw;
+        height: 4vw;
+    }
+    .contact-form #description{
+        width: 33vw;
+        height: 12vw;
+    }
+    .contact-form button{
+        width: 9vw;
+        height: 3.5vw;
+        font-size: 1rem;
+        border-radius: 1.2vw;
+    }
+
+    .icon-group a{
+        margin-left: 2.2vw;
+        border-radius: 0.4vw;
+    }
+    .icon-group img{
+        width: 4vw;
+        height: 4vw;
+        margin: 0;    
+        border-radius: 0.5vw;
+    }
+    .copyright{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width : 1025px ) and (max-width : 1900px ){
+    .section-head{
+        font-size: 1.5rem;
+    }
+    .nav a{
+        width: auto;
+        height: auto;
+        padding: 0.3vw;
+        margin: 0.4vw;
+    }
+    .nav a div{
+        font-size: 1.2rem;
+        top: 0.1vw;
+    }
+    .about-content{
+        margin: 0;
+        padding: 0;
+        margin-left: 0.1vw;
+        margin-right: 0.1vw;
+    }
+    .description{
+        width: 50vw;
+        margin-right: 2.5vw;
+    }
+    .description p{
+        line-height: 3.5vw;
+        width: 50vw;
+        font-size: 1.2rem;
+        text-indent: 2rem;
+    }
+    .my-image{
+        width: 20vw;
+        height: 20vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        margin-left: 2vw;
+    }
+    .image{
+        border-radius: 10vw;  
+    }
+    
+    .whatido-content p{
+        font-size: 1.5rem;
+        line-height: 5vw;
+    }
+    .skill-set{
+        height: 15vw;
+    }
+
+    .background{
+        width: 15vw;
+    }
+    .skill{
+        margin: -15vw 0 0 0;
+        padding: 0;
+        top: 5vw;      
+    }
+    .skill p{
+        font-weight: 100;
+        font-size: 1.2rem;
+    }
+    .future-skills{
+        height: 12vw;
+    }
+    .future-skills .background{
+        width: 12vw;
+    }
+    .future-skills .background .skill{
+        margin-top: -12vw;
+        top: 3vw;       
+    }
+    .future-skills .background .skill p{
+        font-size: 1.1rem;
+    }
+    .projects-content p{
+        font-size: 1.2rem;
+    }
+
+    .contact-form label{
+        width: 15vw;    
+    }
+    .contact-form input{
+        width: 25vw;
+        height: 3vw;
+    }
+    .contact-form #description{
+        width: 25vw;
+        height: 10vw;
+    }
+    .contact-form button{
+        width: 7vw;
+        height: 3vw;
+        font-size: 1rem;
+        border-radius: 1.1vw;
+    }
+
+    .icon-group a{
+        margin-left: 2.2vw;
+        border-radius: 0.4vw;
+    }
+    .icon-group img{
+        width: 3.5vw;
+        height: 3.5vw;
+        margin: 0;    
+        border-radius: 0.5vw;
+    }
+    .copyright{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width : 1901px ){
+    .contact-form label{
+        width: 15vw;
+        font-size: 1.5rem;
+    }
+    .contact-form input{
+        width: 20vw;
+        height: 1.8vw;
+        font-size: 1.5rem;
+    }
+    .contact-form textarea{
+        font-size: 1.5rem;
+    }
+    .contact-form #description{
+        width: 20vw;
+        height: 5vw;
+        margin-bottom: 2vw;
+    }
+    .contact-form button{
+        width: 5vw;
+        height: 2vw;
+        font-size: 1.2rem;
+        background-color: silver;
+        border-radius: 0.7vw;
+    }
+}
+
+
+
+
+
