@@ -85,6 +85,9 @@ nav a:active{
     margin: 0;    
 }
 
+.chat{
+    width: 90%;
+}
 .new-chat{
     position: fixed;
     bottom: 1rem;
