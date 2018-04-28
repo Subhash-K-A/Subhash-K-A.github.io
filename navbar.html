@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+
+        <link rel="stylesheet" type="text/css" href="navbar.css"> 
+
+        <title>Navbar</title>
+    </head>
+    <body>
+        <div class="nav">
+            <a href="index.html" title ="Accordion">
+            <div class="components">
+                <p class="fas fa-home" id="home"></p>
+            </div>
+            </a>
+            <a href="collapse.html" title ="accordion">
+            <div class="components" id="accordion">
+                <p>ACCORDION</p>
+            </div>
+            </a>    
+            <a href="modal.html" title ="modal">    
+            <div class="components" id="modal">
+                <p>MODAL</p>
+            </div>
+            </a>    
+        </div> 
+        
+        <div class="flex-container" id="main-flex">
+            
+            <div id="main-menu">
+                <div id="brand" class="nav-item main">NAVBAR</div>
+                <div class="fas fa-bars main view nav-item" id="menu-icon"></div>
+            </div>
+
+            <div id="menu-item">
+                <div class="view menu-content nav-item">About</div>
+                <div class="view menu-content nav-item">Projects</div>
+                <div class="view menu-content nav-item">Contacts</div>
+                <div class="view menu-content nav-item">Feedback</div>
+            </div>
+            
+        </div>
+
+        <script src="jQuery-3.3.1.min.js"></script>
+        <script src="navbar.js"></script>
+    </body>
+</html>

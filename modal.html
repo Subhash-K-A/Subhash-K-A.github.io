@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+
+        <link rel="stylesheet" type="text/css" href="modal.css"> 
+
+        <title>Modal</title>
+    </head>
+    <body>
+        <div class="nav">
+            <a href="index.html" title ="Accordion">
+            <div class="components">
+                <p class="fas fa-home" id="home"></p>
+            </div>
+            </a>
+            <a href="collapse.html" title ="accordion">
+            <div class="components" id="accordion">
+                <p>ACCORDION</p>
+            </div>
+            </a>    
+            <a href="navbar.html" title ="Navbar">    
+            <div class="components" id="navbar">
+                <p>NAVBAR</p>
+            </div>
+            </a>    
+        </div> 
+        
+        <div class="flex-container" id="main-flex">
+            <div class="click-button">
+                <button id="launch"> Click to Launch Modal</button>
+            </div>
+        </div>
+        
+        <div id="modal">
+            <div id="modal-content">
+                <a href="#">
+                    <span class="far fa-window-close close-modal" id="cross"></span>
+                </a>
+                <p>
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. 
+                </p>
+                <button class="close-modal" id="close"> Close</button>
+            </div>
+        </div>
+
+        <script src="jQuery-3.3.1.min.js"></script>
+        <script src="modal.js"></script>
+    </body>
+</html>
